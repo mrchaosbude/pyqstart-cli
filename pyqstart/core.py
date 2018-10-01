@@ -5,7 +5,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), ''))
 
 import os, errno
-import txt
+from pyqstart import txt
 
 subfolders = ['docs', 'tests',] 
 

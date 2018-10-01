@@ -28,7 +28,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='chaosbude.com',
+    url='https://github.com/mrchaosbude/pyqstart-cli',
 
     # Author details
     author='MrChaosBude',
