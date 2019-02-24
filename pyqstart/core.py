@@ -5,13 +5,18 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), ''))
 
 import os, errno
-from pyqstart import txt
+import txt
+import click
 
 subfolders = ['docs', 'tests',] 
-
-def runApp():
+@click.command()
+@click.option('--name', '-n')
+def runApp(name):
     print(os.getcwd())
-    projektName = input('Projekt Name:')
+    if name == None:
+        projektName = input('Projekt Name:')
+    else:
+        projektName = name
     folderCreator(projektName, subfolders)
     fileCreate(projektName)
     
